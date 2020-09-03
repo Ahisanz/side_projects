@@ -129,4 +129,4 @@ const combined = ages
     .sort((a,b) => a - b)
     .reduce((a, b) => a + b, 0);
 
-console.log(combined);
+console.log(combined); 
