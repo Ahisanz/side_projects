@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section1 {
+  height: 100vh;
+}
+.section2 {
+  position: relative;
+  overflow: scroll;
+  height: 100vh;
+  width: 100%;
+  background-color: sandybrown;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.section2::-webkit-scrollbar {
+  display: none;
+}
+
+.section3 {
+  height: 100vh;
+  background-color: skyblue;
+}
+
+.div1 {
+  position: absolute;
+  background-size: cover;
+}
+.div2 {
+  position: absolute;
+  top: 0;
+  font-size: 1.5rem;
+  width: 50%;
+  padding: 2rem;
+}

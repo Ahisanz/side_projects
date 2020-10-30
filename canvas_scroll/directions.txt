@@ -1,0 +1,19 @@
+this is build like a flipbook.
+multiple images that loads depend of where and how much the user have scrolled.
+
+Scroll :
+
+use scrollTop to get the vertical scroll position of the element, that will serve as the starting point value, and the end value by subtracting the window height from the document scroll height.
+then divide the scrollTop value by the maximum value the user can scrolldown, which gives us the user's scroll progress.
+Turn the scroll progress into a index number that correspons with the image numbering sequence for us to return the correct image for that position.
+Multiplying the progress number by the number of frames(images) we have. Math.floor() to round down the number and Math.min() with our maximum frame count so it never exceeds the total number of frames.
+
+updating <canvas> : 
+browser update <canvas> in a way we couldn't do if we were working with straight images files instead.
+requestAnimationFrame => will match the browser refresh rate and enable hardware acceleration by using webgl to render it using the device's video card or integrated graphics. 
+we pass the frameIndex into the function. that sets the image source with the next image sequence. which is drawn on our canvas.
+
+
+image preloading:
+loop through the entire sequence of images and load them up
+
