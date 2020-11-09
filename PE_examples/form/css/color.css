@@ -1,0 +1,19 @@
+/* Transitions should be more than just color */
+.form__item {
+  transition: all 0.4s;
+}
+.form__item:hover {
+  background-color: slateblue;
+  color: white;
+  transform: scale(1.1);
+}
+.form__button {
+  transition: all 0.4s;
+  background-color: black;
+  color: white;
+}
+.form__button:hover {
+  background-color: slateblue;
+  color: white;
+  transform: scale(1.1);
+}
