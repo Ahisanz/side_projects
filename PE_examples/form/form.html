@@ -14,65 +14,48 @@
   </head>
   <body>
     <section>
-      <h1>Progressive Enhancement Form HTML Only</h1>
+      <h2>Progressive Enhancement Form HTML Only</h2>
       <!-- Is important to set the action to the document that will comunicate with the server and what kind of method is using (Get, Post, Put or Delete) -->
       <form action="save_rating.php" method="post">
-        <ol>
+        <fieldset class="form__group">
+          <legend>How you rate this form?</legend>
           <!-- Label is for the knowing what the input is about, and the name of the input is to send with the submit tot the server and to group a form, the id is for the for of the label. The value is to know which element in the form group that is selected -->
-          <li>
-            <input type="radio" name="rating-form" id="rate-1" value="1" />
-            <label for="rate-1">Rate One</label>
-          </li>
-          <li>
-            <input type="radio" name="rating-form" id="rate-2" value="2" />
-            <label for="rate-2">Rate Two</label>
-          </li>
-          <li>
-            <input type="radio" name="rating-form" id="rate-3" value="3" />
-            <label for="rate-3">Rate Three</label>
-          </li>
-          <li>
-            <input type="radio" name="rating-form" id="rate-4" value="4" />
-            <label for="rate-4">Rate Four</label>
-          </li>
-          <li>
-            <input type="radio" name="rating-form" id="rate-5" value="5" />
-            <label for="rate-5">Rate Five</label>
-          </li>
-        </ol>
+          <input
+            type="radio"
+            name="rating-form"
+            id="rate-1"
+            value="1"
+            checked
+          />
+          <label for="rate-1">Rate One</label>
+          <input type="radio" name="rating-form" id="rate-2" value="2" />
+          <label for="rate-2">Rate Two</label>
+          <input type="radio" name="rating-form" id="rate-3" value="3" />
+          <label for="rate-3">Rate Three</label>
+          <input type="radio" name="rating-form" id="rate-4" value="4" />
+          <label for="rate-4">Rate Four</label>
+          <input type="radio" name="rating-form" id="rate-5" value="5" />
+          <label for="rate-5">Rate Five</label>
+        </fieldset>
         <!-- Submit button inside a form, send the information to the action of the form -->
         <button type="submit">Submit Rating</button>
       </form>
     </section>
     <section class="form">
       <!-- The version with the CSS is for layout, fonts and color, and to give also more feedback to the user, with hover, and responsiviness -->
-      <h1 class="form__title">Progressive Enhancement Form HTML/CSS Only</h1>
+      <h2 class="form__title">Progressive Enhancement Form HTML/CSS Only</h2>
       <form action="save_rating.php" method="post" class="form__form">
-        <div class="form__group">
+        <fieldset class="form__group">
+          <legend>How you rate this form?</legend>
           <input
             type="radio"
             name="rating-form__css"
-            id="rate-css-5"
-            value="5"
+            id="rate-css-1"
+            value="1"
             class="form__input"
+            checked
           />
-          <label for="rate-css-5" class="form__label">Rate Five</label>
-          <input
-            type="radio"
-            name="rating-form__css"
-            id="rate-css-4"
-            value="4"
-            class="form__input"
-          />
-          <label for="rate-css-4" class="form__label">Rate Four</label>
-          <input
-            type="radio"
-            name="rating-form__css"
-            id="rate-css-3"
-            value="3"
-            class="form__input"
-          />
-          <label for="rate-css-3" class="form__label">Rate Three</label>
+          <label for="rate-css-1" class="form__label">Rate One</label>
           <input
             type="radio"
             name="rating-form__css"
@@ -84,45 +67,47 @@
           <input
             type="radio"
             name="rating-form__css"
-            id="rate-css-1"
-            value="1"
+            id="rate-css-3"
+            value="3"
             class="form__input"
           />
-          <label for="rate-css-1" class="form__label">Rate One</label>
-        </div>
+          <label for="rate-css-3" class="form__label">Rate Three</label>
+          <input
+            type="radio"
+            name="rating-form__css"
+            id="rate-css-4"
+            value="4"
+            class="form__input"
+          />
+          <label for="rate-css-4" class="form__label">Rate Four</label>
+          <input
+            type="radio"
+            name="rating-form__css"
+            id="rate-css-5"
+            value="5"
+            class="form__input"
+          />
+          <label for="rate-css-5" class="form__label">Rate Five</label>
+        </fieldset>
         <!-- Submit button inside a form, send the information to the action of the form -->
         <button type="submit" class="form__button">Submit Rating</button>
       </form>
     </section>
     <section class="form form-js">
-      <!-- The version with the CSS is for layout, fonts and color, and to give also more feedback to the user, with hover, and responsiviness -->
-      <h1 class="form__title">Progressive Enhancement Form HTML/CSS/JS</h1>
+      <!-- JS version send automatically the result when there is some change -->
+      <h2 class="form__title">Progressive Enhancement Form HTML/CSS/JS</h2>
       <form action="save_rating.php" method="post" class="form__form">
-        <div class="form__group">
+        <fieldset class="form__group">
+          <legend>How you rate this form?</legend>
           <input
             type="radio"
             name="rating-form__js"
-            id="rate-js-5"
-            value="5"
+            id="rate-js-1"
+            value="1"
             class="form__input"
+            checked
           />
-          <label for="rate-js-5" class="form__label">Rate Five</label>
-          <input
-            type="radio"
-            name="rating-form__js"
-            id="rate-js-4"
-            value="4"
-            class="form__input"
-          />
-          <label for="rate-js-4" class="form__label">Rate Four</label>
-          <input
-            type="radio"
-            name="rating-form__js"
-            id="rate-js-3"
-            value="3"
-            class="form__input"
-          />
-          <label for="rate-js-3" class="form__label">Rate Three</label>
+          <label for="rate-js-1" class="form__label">Rate One</label>
           <input
             type="radio"
             name="rating-form__js"
@@ -134,12 +119,83 @@
           <input
             type="radio"
             name="rating-form__js"
-            id="rate-js-1"
-            value="1"
+            id="rate-js-3"
+            value="3"
             class="form__input"
           />
-          <label for="rate-js-1" class="form__label">Rate One</label>
-        </div>
+          <label for="rate-js-3" class="form__label">Rate Three</label>
+          <input
+            type="radio"
+            name="rating-form__js"
+            id="rate-js-4"
+            value="4"
+            class="form__input"
+          />
+          <label for="rate-js-4" class="form__label">Rate Four</label>
+          <input
+            type="radio"
+            name="rating-form__js"
+            id="rate-js-5"
+            value="5"
+            class="form__input"
+          />
+          <label for="rate-js-5" class="form__label">Rate Five</label>
+        </fieldset>
+        <button type="submit" class="form__button">Submit Rating</button>
+      </form>
+    </section>
+    <section class="form form-a11y">
+      <!-- AddAria Checked with javascript function, still need more things to consider in accessibility -->
+      <h1 class="form__title">
+        Progressive Enhancement Form HTML/CSS/JS and Aria-Checked
+      </h1>
+      <form action="save_rating.php" method="post" class="form__form">
+        <fieldset class="form__group">
+          <legend>How you rate this form?</legend>
+          <input
+            type="radio"
+            name="rating-form__a11y"
+            id="rate-a11y-1"
+            value="1"
+            class="form__input"
+            checked
+            aria-checked="true"
+          />
+          <label for="rate-a11y-1" class="form__label">Rate One</label>
+          <input
+            type="radio"
+            name="rating-form__a11y"
+            id="rate-a11y-2"
+            value="2"
+            class="form__input"
+            aria-checked="false"
+          />
+          <label for="rate-a11y-2" class="form__label">Rate Two</label>
+          <input
+            type="radio"
+            name="rating-form__a11y"
+            id="rate-a11y-3"
+            value="3"
+            class="form__input"
+          />
+          <label for="rate-a11y-3" class="form__label">Rate Three</label>
+          <input
+            type="radio"
+            name="rating-form__a11y"
+            id="rate-a11y-4"
+            value="4"
+            class="form__input"
+          />
+          <label for="rate-a11y-4" class="form__label">Rate Four</label>
+          <input
+            type="radio"
+            name="rating-form__a11y"
+            id="rate-a11y-5"
+            value="5"
+            class="form__input"
+          />
+          <label for="rate-a11y-5" class="form__label">Rate Five</label>
+        </fieldset>
         <!-- Submit button inside a form, send the information to the action of the form -->
         <button type="submit" class="form__button">Submit Rating</button>
       </form>
@@ -147,42 +203,3 @@
     <script src="app.js"></script>
   </body>
 </html>
-<!-- 
-
-  On the <input> element, the most important attribute is the type attribute. This attribute is extremely important because it defines the way the <input> element appears and behaves. You'll find more about this in the Basic native form controls article later on.
-
-    In our simple example, we use the value <input/text> for the first input — the default value for this attribute. It represents a basic single-line text field that accepts any kind of text input.
-    For the second input, we use the value <input/email>, which defines a single-line text field that only accepts a well-formed e-mail address. This turns a basic text field into a kind of "intelligent" field that will perform some validation checks on the data typed by the user. It also causes a more appropriate keyboard layout for entering email addresses (e.g. with an @ symbol by default) to appear on devices with dynamic keyboards, like smartphones. You'll find out more about form validation in the client-side form validation article later on.
-
-Last but not least, note the syntax of <input> vs. <textarea></textarea>. This is one of the oddities of HTML. The <input> tag is an empty element, meaning that it doesn't need a closing tag. <textarea> is not an empty element, meaning it should be closed with the proper ending tag. This has an impact on a specific feature of forms: the way you define the default value. To define the default value of an <input> element you have to use the value attribute like this:
-
-
-  The <button> element also accepts a type attribute — this accepts one of three values: submit, reset, or button.
-
-    A click on a submit button (the default value) sends the form's data to the web page defined by the action attribute of the <form> element.
-    A click on a reset button resets all the form widgets to their default value immediately. From a UX point of view, this is considered bad practice, so you should avoid using this type of button unless you really have a good reason to include one.
-    A click on a button button does... nothing! That sounds silly, but it's amazingly useful for building custom buttons — you can define their chosen functionality with JavaScript.
-
-We provide a name to each form control. The names are important on both the client- and server-side; they tell the browser which name to give each piece of data and, on the server side, they let the server handle each piece of data by name. The form data is sent to the server as name/value pairs.
-
-
-Also, don’t forget to include the action and method attributes for form element. The value of action attribute will be the path to your file with PHP that will handle the form. Value of method attribute will be “POST” – we will send data to the server, not receive (GET method). By the way, this HTML is the first layer of the progressive enhancement – the foundation.
-
-
-
-
-    Your Submission Page - I could be wrong, but this sounds like a shopping cart to me (at least in essence). You are on the right track with query parameters, but you could also store info about the cart (and the user’s capabilities) in a session or cookie.
-
-    In terms of updating the “cart”, a simple “update” submit button that posts the form and triggers a redirection back to this page with the updated info would be sufficient. And if you need to show or hide fields based on choices made, you simply apply that logic on the server side. You could even have the server generate that same markup into the page, but hidden for situations where JavaScript is available.
-
-    Your Messaging App - This can seem like a daunting challenge, but before we had web sockets and even Ajax, we relied on a small form which posts messages to the back end and a running feed of messages being sent from the back-end. One of the most common way to handle this involved frames and a “meta refresh” like this one:
-
-    <meta http-equiv="refresh" content="30">
-
-    That simple meta tag will make any browser refresh the page every 30 seconds. Now if you put that in an iframe to keep it from causing a refresh of the entire interface, any new messages would be picked up and displayed automatically at that interval (which you should tune to be appropriate for your app).
-
-    Once that is in place the page itself could even post to that frame by using the non-standard but well-supported _target attribute on the form.
-
-    Obviously with JavaScript enabled, you’d probably throw away that iframe, but the rest of the setup (including the templates for displaying the messages) could certainly be reused with WebSockets.
-
- -->
